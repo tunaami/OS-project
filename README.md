@@ -117,8 +117,10 @@ One person can click between the windows to play all three roles — the OS trea
 6. **Race condition demo:**  
    ```bash
    ./board --user alice --no-lock
-   ```  
-   Three clients draw rapidly with no locking. Observe corrupted characters, torn writes, and inconsistent cursor positions in the status bar.
+   ./board --user bob --no-lock
+   ```
+   Run the bob command on another terminal.
+   The two clients draw rapidly with no locking. Observe corrupted characters, torn writes, and inconsistent cursor positions in the status bar.
 
 ## Architecture Overview
 
